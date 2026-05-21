@@ -19,7 +19,8 @@ FFmpeg runs completely inside Docker, avoiding local Windows FFmpeg installation
 - Automatic bitrate calculation
 - Target-size-based compression
 - Two-pass FFmpeg encoding
-- AAC audio encoding
+- Adaptive AAC audio encoding
+- Optional H.265/HEVC output for better quality at very small sizes
 - MP4 output generation
 - Dockerized setup
 - Windows-friendly
@@ -35,7 +36,7 @@ FFmpeg runs completely inside Docker, avoiding local Windows FFmpeg installation
 | Compression Engine | FFmpeg |
 | Containerization | Docker |
 | Orchestration | Docker Compose |
-| Video Codec | H.264 (libx264) |
+| Video Codec | H.265/HEVC (libx265) or H.264 (libx264) |
 | Audio Codec | AAC |
 | Output Format | MP4 |
 
